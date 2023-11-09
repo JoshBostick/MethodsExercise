@@ -2,8 +2,24 @@
 {
     public class Program
     {
+        public static int Sum(int num1, int num2)
+        {
+            var answer = num1 + num2;
+            return answer;
+        }
+
+        public static int Multiply(int num1, int num2, int num3)
+        {
+            return num1 * num2; 
+        }
+
+
         static void Main(string[] args)
         {
+            var total = Sum(4, 10);
+            var blah = Multiply(15, 10, 8);
+
+            //----------------Exercise 1----------------------
             Console.WriteLine("What is your name?");
             var name = Console.ReadLine();
             Console.WriteLine($"Hello {name}, What is your favorite color?");
